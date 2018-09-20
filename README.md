@@ -1,4 +1,4 @@
-# mac-inline-battery
+# Mac Inline Battery
 🔋 Mac-like Inline Battery Plasmoid for KDE
 
 ## Install
