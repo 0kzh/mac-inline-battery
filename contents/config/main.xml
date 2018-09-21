@@ -9,6 +9,12 @@
     <entry name="showBatteryIcon" type="bool">
       <default>true</default>
     </entry>
+    <entry name="iconWidth" type="int">
+      <default>26</default>
+    </entry>
+    <entry name="iconHeight" type="int">
+      <default>15</default>
+    </entry>
     <entry name="showPercentage" type="bool">
       <default>true</default>
     </entry>

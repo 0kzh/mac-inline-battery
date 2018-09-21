@@ -109,13 +109,14 @@ Item {
 			Item {
 				id: batteryIconContainer
 				visible: plasmoid.configuration.showBatteryIcon
-				width: 26 * units.devicePixelRatio
-				height: 15 * units.devicePixelRatio + (gridLayout.useVerticalLayout ? gridLayout.spacing : 0)
+				width: config.iconWidth * units.devicePixelRatio
+				height: config.iconHeight * units.devicePixelRatio
+				anchors.verticalCenter: parent.verticalCenter
 
 				MacBatteryIcon {
 					id: batteryIcon
-					width: Math.min(parent.width, 26 * units.devicePixelRatio)
-					height: Math.min(parent.height, 15 * units.devicePixelRatio)
+					width: Math.min(parent.width, config.iconWidth * units.devicePixelRatio)
+					height: Math.min(parent.height, config.iconHeight * units.devicePixelRatio)
 					anchors.centerIn: parent
 					charging: currentBatteryState == "Charging"
 					charge: currentBatteryPercent

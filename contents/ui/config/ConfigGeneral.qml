@@ -23,6 +23,27 @@ ConfigPage {
 			configKey: 'showBatteryIcon'
 		}
 
+		RowLayout {
+			ConfigSpinBox {
+				before: i18n("Dimensions")
+				suffix: 'px'
+				configKey: 'iconWidth'
+				value: config.iconWidth
+				minimumValue: 0
+				maximumValue: 100
+			}
+			Label {
+				text: "x"
+			}
+			ConfigSpinBox {
+				suffix: 'px'
+				configKey: 'iconHeight'
+				value: config.iconHeight
+				minimumValue: 0
+				maximumValue: 100
+			}
+		}
+
 		ConfigColor {
 			label: i18n("Normal")
 			configKey: 'normalColor'

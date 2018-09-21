@@ -15,4 +15,10 @@ QtObject {
 
 	readonly property int defaultPadding: 8
 	readonly property int padding: plasmoid.configuration.padding || defaultPadding
+
+	readonly property int defaultIconWidth: 26
+	readonly property int iconWidth: plasmoid.configuration.iconWidth || defaultIconWidth
+
+	readonly property int defaultIconHeight: 15
+	readonly property int iconHeight: plasmoid.configuration.iconHeight || defaultIconHeight
 }
