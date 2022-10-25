@@ -77,9 +77,9 @@ Item {
 
     property var inhibitions: []
 
-    readonly property var kcms: ["powerdevilprofilesconfig.desktop",
-                                 "powerdevilactivitiesconfig.desktop",
-                                 "powerdevilglobalconfig.desktop"]
+    readonly property var kcms: ["powerdevilprofilesconfig",
+                                 "powerdevilactivitiesconfig",
+                                 "powerdevilglobalconfig"]
 
     readonly property bool kcmsAuthorized: KCMShell.authorize(batterywidget.kcms).length > 0
 
