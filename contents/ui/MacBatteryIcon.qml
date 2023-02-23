@@ -30,7 +30,7 @@ Item {
 				color: {
 					if (charging) {
 						return chargingColor
-					} else if (charge < lowBatteryPercent) {
+					} else if (charge <= lowBatteryPercent) {
 						return lowBatteryColor
 					} else {
 						return normalColor
